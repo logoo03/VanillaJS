@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joo</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="src/style.css" />
+    </head>
+
+    <body>
+        <div class="center container">
+            <div id="clock" class="top">
+                <div id="clock-date"></div>
+                <div id="clock-time">
+                    <span id="clock-hour"></span>
+                    <span id="clock-blink">:</span>
+                    <span id="clock-minute"></span>
+                    <span id="clock-blink">:</span>
+                    <span id="clock-second"></span>
+                </div>
+            </div>
+            <div id="geo" class="top">
+                <div id="city"></div>
+                <div id="weather"></div>
+            </div>
+        </div>
+        <div id="login">
+            <form class="login-form container center">
+                <input type="text" name="username" id="username" />
+                <button>Login</button>
+            </form>
+        </div>
+        <div id="logout" class="hidden">
+            <div class="center container">
+                <h2 id="greeting" onclick="doLogin();"></h2>
+                <button id="button-logout">Logout</button>
+                <button id="change">Change Color</button>
+            </div>
+        </div>
+        <div id="todo" class="center">
+            <h2>To-Do List</h2>
+            <form id="todo-form">
+                <input type="text" name="todo-new" id="todo-new" placeholder="Add To-Do" required />
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+        <script src="src/clock.js"></script>
+        <script src="src/todo.js"></script>
+        <script src="src/login.js"></script>
+        <script src="src/weather.js"></script>
+        <script src="src/background.js"></script>
+    </body>
+</html>
